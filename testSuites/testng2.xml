@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  
+  <!-- Filter to run only tests with 'Errorhandling' group -->  
+  <listeners>
+    <listener class-name="TestComponents.Listeners" />
+  </listeners>
+  
+  <!-- First Test: SubmitOrderTest -->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Tests.SubmitOrderTest" />
+    </classes>
+  </test>
+  
+  <!-- Second Test: AppTest and ErrorValidation (filtered by group) -->
+  <test thread-count="5" name="=Test2">
+    <classes>
+      <class name="Tests.AppTest" />
+      <class name="Tests.ErrorValidation" />
+    </classes>
+  </test>
+  
+</suite>
