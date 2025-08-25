@@ -3,6 +3,7 @@
 <suite name="Suite">
     <listeners>
         <listener class-name="TestComponents.Listeners" />
+        <listener class-name="TestComponents.SlackTestListener" />
     </listeners>
     <test name="Test">
         <classes>

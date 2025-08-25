@@ -6,6 +6,8 @@ import org.testng.ITestResult;
 public class Retry implements IRetryAnalyzer	{
 	int count=0;
 	int maxTry=1;
+	//Track total retries in the suite
+	public static int totalRetries = 0;
 	
 
 	@Override
@@ -15,6 +17,7 @@ public class Retry implements IRetryAnalyzer	{
 		// TODO Auto-generated method stub
 		if(count<maxTry) {
 			count++;
+			totalRetries++;   // increment global counter
 			System.out.println("Retrying " + result.getName() + " for " + count + " time(s).");
 			return true;
 		}

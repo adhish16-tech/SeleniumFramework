@@ -76,6 +76,19 @@
     <artifactId>cucumber-testng</artifactId>
     <version>7.26.0</version>
 </dependency>
+<!-- Apache POI Core -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.2.5</version>
+    </dependency>
+
+    <!-- Apache POI for .xlsx files (XSSF) -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.5</version>
+    </dependency>
   </dependencies>
 
   <build>
