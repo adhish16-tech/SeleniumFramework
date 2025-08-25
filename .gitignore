@@ -1,0 +1,27 @@
+# === Java & Eclipse ===
+.classpath
+.project
+.settings/
+bin/
+*.iml
+
+# === Maven / Gradle build ===
+target/
+build/
+
+# === IDEs ===
+.idea/
+.vscode/
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Reports & Logs ===
+reports/
+logs/
+*.log
+
+# === TestNG / JUnit output ===
+test-output/
+surefire-reports/
