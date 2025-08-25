@@ -1,17 +1,11 @@
 package Tests;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-
 import Framework.pageobjects.CartPage;
-import Framework.pageobjects.CheckoutPage;
-import Framework.pageobjects.ConfirmationPage;
-import Framework.pageobjects.LandingPage;
 import Framework.pageobjects.ProductCatalogue;
 import TestComponents.BaseTest;
 import org.testng.Assert;

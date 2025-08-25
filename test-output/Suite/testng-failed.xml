@@ -9,6 +9,7 @@
     <classes>
       <class name="Tests.ErrorValidation">
         <methods>
+          <include name="ProductErrorValidation"/>
           <include name="submitOrder"/>
           <include name="tearDown"/>
           <include name="setUp"/>
